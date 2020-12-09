@@ -1,0 +1,56 @@
+body {
+
+    background-color: #E5E5E5;
+}
+
+.section-wrapper {
+
+    max-width: 1640px;
+    margin: 0 auto;
+    padding-left: 20px;
+    padding-right: 20px;
+
+    &::before {
+
+        content: '';
+        display: block;
+    }
+}
+
+.btn {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    min-height: 44px;
+    padding: 8px 25px;
+    border-radius: 30px;
+    border: 2px solid transparent;
+    font-size: 14px;
+    font-weight: 700;
+    color: #000;
+    cursor: pointer;
+    -webkit-transition: all .3s;
+    transition: all .3s;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    outline: none;
+  }
+
+  .btn--black {
+    background-color:#000;
+    color: #fff;
+  }
+  
+  .btn--black:hover {
+    background-color: #fff;
+    color: #000;
+    border-color: #000;
+  }
+
+@import 'reviews-page';

@@ -102,12 +102,7 @@ $(document).ready(function () {
             })), $(".btn-whatsapp-js").click((function () {
                 yaCounter49857403 && yaCounter49857403.reachGoal("whatsapp_samples_button")
             }));
-            var o = pageYOffset,
-                i = document.getElementById("top-navbar-js");
-            window.addEventListener("scroll", (function () {
-                var e = pageYOffset;
-                e > o ? i.classList.add("fixed-header--hide") : i.classList.remove("fixed-header--hide"), o = e
-            })), isMobileDetect.any && IntersectionObserver && (window.slidersSwipeObserver = new IntersectionObserver((function (e, t) {
+            isMobileDetect.any && IntersectionObserver && (window.slidersSwipeObserver = new IntersectionObserver((function (e, t) {
                 e.forEach((function (e) {
                     e.isIntersecting && !e.target.classList.contains("lock-swipe-anim") && (playSwipeAnimation(e.target), e.target.classList.add("lock-swipe-anim"))
                 }))
