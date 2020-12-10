@@ -47,4 +47,52 @@ body {
     border-color: #000;
   }
 
+  .video-btn {
+
+    background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    top: 50%;
+    margin-top: -40px;
+    left: 50%;
+    margin-left: -40px;
+    cursor: pointer;
+
+    &::before {
+
+        content: '';
+        display: block;
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        top: 50%;
+        margin-top: -13px;
+        left: 50%;
+        margin-left: -8px;
+        background: url('../imgs/photos-block-content-video-btn-background.svg') no-repeat 0 0;
+    }
+
+    &.plaing {
+
+      opacity: 0;
+    }
+  }
+
+  .main-wrapper-title {
+
+    font-size: 42px;
+    line-height: 50px;
+  }
+
+  @media screen and (max-width:780px) {
+  
+    .main-wrapper-title {
+
+      font-size: 24px;
+      line-height: 29px;
+    }
+  }
+
 @import 'reviews-page';
