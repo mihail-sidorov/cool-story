@@ -2,6 +2,7 @@
 
     position: relative;
     border-radius: 10px;
+    margin-bottom: 100px;
 
     &::before, &::after {
 
@@ -176,6 +177,8 @@
 }
 
 .photos-block {
+
+    margin-bottom: 100px;
 
     &__content {
 
@@ -507,6 +510,77 @@
     }
 }
 
+.reviews {
+
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+    background: transparent !important;
+    margin-bottom: 100px;
+
+    .swiper-slide-shadow-left, .swiper-slide-shadow-right {
+        display: none;
+    }
+
+    &__slider {
+
+        min-height: 0;
+
+        .swiper-container {
+
+            transform: none;
+            padding-top: 18px;
+            padding-bottom: 5px;
+
+            &::before {
+
+                content: '';
+                display: block;
+                position: absolute;
+                width: 160px;
+                height: 350px;
+                top: 0;
+                left: 50%;
+                margin-left: -78px;
+                background-image: url('../imgs/reviews-page-slider-mobile-image.png');
+                background-repeat: no-repeat;
+                background-position: 0 0;
+                background-size: 160px 350px;
+                z-index: 2;
+            }
+
+            .swiper-slide {
+
+                padding-left: 25px;
+            }
+
+            .swiper-button-prev, .swiper-button-next {
+
+                width: 30px !important;
+                height: 30px !important;
+                background-color: #000 !important;
+                border-radius: 50% !important;
+                background-repeat: no-repeat !important;
+                background-position: center !important;
+                background-image: url("../imgs/slider-vector-left.svg") !important;
+                background-size: auto;
+                left: 0 !important;
+            }
+
+            .swiper-button-next {
+
+                background-image: url("../imgs/slider-vector-right.svg") !important;
+                left: auto !important;
+                right: 0 !important;
+            }
+        }
+
+        &::after {
+
+            display: none;
+        }
+    }
+}
+
 @media screen and (max-width:1050px) {
 
     .reviews-about-camerist {
@@ -558,6 +632,7 @@
 
         padding-left: 0;
         padding-right: 0;
+        margin-bottom: 40px;
 
         &::before {
 
@@ -596,7 +671,16 @@
         }
     }
 
+    .reviews {
+
+        margin-bottom: 40px;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
     .photos-block {
+
+        margin-bottom: 40px;
 
         &__content {
 
@@ -654,6 +738,25 @@
                             margin-left: 0 !important;
                         }
                     }
+                }
+            }
+        }
+    }
+
+    .reviews {
+    
+        &__slider {
+    
+            .swiper-container {
+    
+                .swiper-button-prev {
+    
+                    left: calc((100% - 180px) / 2) !important;
+                }
+    
+                .swiper-button-next {
+    
+                    right: calc((100% - 183px) / 2) !important;
                 }
             }
         }
