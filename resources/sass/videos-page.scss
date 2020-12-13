@@ -162,3 +162,29 @@
         }
     }
 }
+
+@media screen and (max-width:780px) {
+
+    .videos-block-1 {
+
+        &__content {
+
+            padding: 40px 20px;
+            background-image: url('../imgs/videos-block-1-background-mobile.png');
+            background-position: 100% calc(100% + 30px);
+        }
+
+        &__text {
+
+            &-btns {
+
+                display: block;
+            }
+        }
+
+        &__form {
+
+            display: none;
+        }
+    }
+}
