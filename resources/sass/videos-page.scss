@@ -429,7 +429,7 @@
                 background-image: url('/imgs/videos-block-3-banner-wrapper-left.png');
                 background-repeat: no-repeat;
                 background-position: 40px calc(100% + 30px);
-                background-size: auto 100%;
+                z-index: 1;
             }
 
             &::after {
@@ -444,7 +444,7 @@
                 background-image: url('/imgs/videos-block-3-banner-wrapper-right.png');
                 background-repeat: no-repeat;
                 background-position: calc(100% - 40px) calc(100% + 10px);
-                background-size: auto 100%;
+                z-index: 1;
             }
         }
 
@@ -454,6 +454,7 @@
             display: flex;
             justify-content: center;
             position: relative;
+            z-index: 2;
 
             &-title {
 
@@ -534,6 +535,103 @@
 
                 font-size: 24px;
                 margin-bottom: 5px;
+            }
+        }
+    }
+
+    .videos-block-3 {
+
+        &__title {
+
+            margin-bottom: 20px;
+        }
+
+        &__video-text {
+
+            flex-wrap: wrap;
+            margin-bottom: 40px;
+        }
+
+        &__video {
+
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 15px;
+        }
+
+        &__text {
+
+            width: 100%;
+            max-width: none;
+
+            &-title {
+
+                margin-bottom: 10px;
+            }
+
+            &-desc {
+
+                margin-bottom: 20px;
+            }
+        }
+
+        &__video-text_mirror {
+
+            .videos-block-3__video {
+
+                order: 1;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            .videos-block-3__text {
+
+                order: 2;
+            }
+        }
+
+        &__banner {
+
+            margin-top: 40px;
+            margin-bottom: 40px;
+            margin-left: -20px;
+            margin-right: -20px;
+
+            &-wrapper {
+
+                border-radius: 0;
+
+                &::before {
+
+                    display: none;
+                }
+
+                &::after {
+
+                    width: 100%;
+                    background-position: calc(100% + 25px) calc(100% + 10px);
+                }
+            }
+
+            &-content {
+
+                padding-left: 20px;
+                padding-right: 20px;
+                padding-bottom: 90px;
+                justify-content: flex-start;
+
+                &-title {
+
+                    font-size: 24px;
+                    line-height: 29px;
+                    max-width: 250px;
+                }
+
+                &-desc {
+
+                    max-width: 200px;
+                    margin-bottom: 90px;
+                }
             }
         }
     }
