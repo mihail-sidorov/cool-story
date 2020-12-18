@@ -1,0 +1,216 @@
+.actual-questions-block-1 {
+
+    position: relative;
+    margin-bottom: 100px;
+
+    &::before {
+
+        content: '';
+        display: block;
+        position: absolute;
+        width: calc(100% - 40px);
+        height: 100%;
+        background: linear-gradient(96.83deg, #FE808C 14.55%, #DE6264 100%);
+        box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.25);
+        border-radius: 10px;
+        top: 0;
+        left: 20px;
+    }
+
+    &__content {
+
+        padding: 40px 100px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-image: url('../imgs/actual-questions-block-1-background.png');
+        background-repeat: no-repeat;
+        background-position: 50% calc(100% + 30px);
+        position: relative;
+    }
+
+    &__text {
+
+        color: #fff;
+
+        &-title {
+
+            font-size: 36px;
+            line-height: 43px;
+            font-weight: bold;
+            margin-bottom: 30px;
+            max-width: 250px;
+
+        }
+
+        &-desc {
+
+            font-size: 18px;
+            line-height: 22px;
+            max-width: 250px;
+            margin-bottom: 20px;
+        }
+
+        &-item {
+
+            display: block;
+            color: #fff;
+            text-decoration: none;
+            padding-left: 20px;
+            background: url('../imgs/reviews-block__text-item.svg') no-repeat 0 2px;
+            margin-bottom: 10px;
+
+            &:last-child {
+
+                margin-bottom: 0;
+            }
+
+            &-title {
+
+                font-size: 18px;
+                line-height: 22px;
+            }
+
+            &-desc {
+
+                font-size: 14px;
+                line-height: 17px;
+            }
+        }
+
+        &-btns {
+
+            display: none;
+            margin-top: 40px;
+        }
+
+        &-btn {
+
+            margin: 0;
+        }
+    }
+
+    &__form {
+
+        color: #fff;
+
+        &-title {
+
+            font-size: 36px;
+            line-height: 43px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            max-width: 270px;
+        }
+
+        &-items {
+
+            margin-bottom: 20px;
+        }
+
+        &-item {
+
+            margin-bottom: 20px;
+
+            &:last-child {
+
+                margin-bottom: 0;
+            }
+
+            &_checkbox {
+
+                line-height: 15px;
+                font-size: 12px;
+
+                label {
+
+                    display: inline-block;
+                    width: 15px;
+                    height: 15px;
+                    background-color: #fff;
+                    border-radius: 2px;
+                    vertical-align: top;
+                    margin-right: 2px;
+                }
+            }
+
+            input {
+
+                border: 0;
+                border-radius: 10px;
+                width: 285px;
+                height: 40px;
+                line-height: 40px;
+                font-size: 14px;
+                padding: 0 30px;
+                color: #9495A0;
+
+                &::placeholder {
+
+                    opacity: 1;
+                    color: #9495A0;
+                }
+
+                &[type="checkbox"] {
+
+                    display: none;
+                }
+            }
+        }
+
+        &-btns {
+
+            text-align: center;
+        }
+
+        &-btn {
+
+            margin: 0;
+        }
+    }
+}
+
+@media screen and (max-width:780px) {
+
+    .actual-questions-block-1 {
+
+        padding-left: 0;
+        padding-right: 0;
+        margin-bottom: 40px;
+
+        &::before {
+
+            width: 100%;
+            box-shadow: none;
+            left: 0;
+            border-radius: 0;
+        }
+
+        &__content {
+
+            padding: 40px 20px 110px 20px;
+            background-image: url('../imgs/actual-questions-block-1-background-mobile.png');
+            background-position: 100% calc(100% + 30px);
+        }
+
+        &__text {
+
+            &-title {
+
+                font-size: 24px;
+                line-height: 29px;
+                max-width: 180px;
+            }
+
+            &-btns {
+
+                display: block;
+            }
+        }
+
+        &__form {
+
+            display: none;
+        }
+    }
+}
