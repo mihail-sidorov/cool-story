@@ -100,7 +100,6 @@
             line-height: 43px;
             font-weight: bold;
             margin-bottom: 20px;
-            max-width: 270px;
         }
 
         &-items {
@@ -170,6 +169,61 @@
     }
 }
 
+.actual-questions-block-2 {
+
+    display: flex;
+    align-items: center;
+
+    &__search {
+
+        display: flex;
+        margin-right: 20px;
+
+        input {
+
+            width: 387px;
+            height: 40px;
+            box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.25);
+            border: 0;
+            border-radius: 20px;
+            padding-right: 20px;
+            padding-left: 80px;
+            background-image: url('/imgs/actual-questions-block-2-search.svg');
+            background-repeat: no-repeat;
+            background-position: 55px 50%;
+            font-size: 18px;
+            color: #9495A0;
+            margin-right: 20px;
+
+            &::placeholder {
+
+                font-size: 18px;
+                color: #9495A0;
+            }
+        }
+    }
+
+    &__action {
+
+        display: flex;
+        align-items: center;
+        margin-left: auto;
+
+        &-text {
+
+            font-size: 18px;
+            color: #0D0822;
+            font-weight: bold;
+            margin-right: 20px;
+        }
+
+        button + button {
+
+            display: none;
+        }
+    }
+}
+
 @media screen and (max-width:780px) {
 
     .actual-questions-block-1 {
@@ -211,6 +265,63 @@
         &__form {
 
             display: none;
+        }
+    }
+
+    .actual-questions-block-2 {
+    
+        &__search {
+    
+            input {
+
+                width: 158px;
+                padding-left: 40px;
+                background-position-x: 15px;
+                margin-right: 0;
+            }
+
+            button {
+
+                display: none;
+            }
+        }
+
+        &__action {
+
+            &-text {
+
+                display: none;
+            }
+
+            button {
+
+                display: none;
+            }
+
+            button + button {
+
+                display: inline-block;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:440px) {
+
+    .actual-questions-block-2 {
+
+        flex-wrap: wrap;
+    
+        &__search {
+
+            width: 100%;
+            margin-right: 0;
+            margin-bottom: 20px;
+
+            input {
+
+                width: 100%;
+            }
         }
     }
 }
