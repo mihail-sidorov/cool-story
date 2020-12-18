@@ -190,14 +190,19 @@
 
         &-video {
 
-            max-width: 487px;
-            position: relative;
-            border-radius: 10px;
-            overflow: hidden;
+            font-size: 0;
 
-            video {
+            &-wrapper {
 
-                width: 100%;
+                display: inline-block;
+                position: relative;
+                border-radius: 10px;
+                overflow: hidden;
+
+                video {
+
+                    max-width: 100%;
+                }
             }
         }
 
@@ -352,13 +357,19 @@
 
             &-video {
 
-                max-width: 387px;
                 font-size: 0;
-                position: relative;
+
+                &-wrapper {
+
+                    display: inline-block;
+                    position: relative;
+                    border-radius: 10px;
+                    overflow: hidden;
+                }
 
                 video {
 
-                    width: 100%;
+                    max-width: 100%;
                 }
             }
         }
@@ -634,8 +645,7 @@
 
                 &-video {
 
-                    margin-left: auto;
-                    margin-right: auto;
+                    text-align: center;
                 }
             }
 
@@ -718,8 +728,7 @@
             &-video {
 
                 width: 100%;
-                margin-left: auto;
-                margin-right: auto;
+                text-align: center;
             }
 
             &-text {

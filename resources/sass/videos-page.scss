@@ -272,12 +272,21 @@
 
     &__video {
 
-        max-width: 591px;
-        position: relative;
-        border-radius: 10px;
-        overflow: hidden;
         font-size: 0;
         margin-right: 20px;
+
+        &-wrapper {
+
+            display: inline-block;
+            position: relative;
+            border-radius: 10px;
+            overflow: hidden;
+
+            video {
+
+                max-width: 100%;
+            }
+        }
     }
 
     &__text {
@@ -584,9 +593,10 @@
 
         &__video {
 
-            margin-left: auto;
-            margin-right: auto;
+            width: 100%;
             margin-bottom: 15px;
+            margin-right: 0;
+            text-align: center;
         }
 
         &__text {
