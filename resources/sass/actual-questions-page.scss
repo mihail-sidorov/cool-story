@@ -173,6 +173,7 @@
 
     display: flex;
     align-items: center;
+    margin-bottom: 100px;
 
     &__search {
 
@@ -306,6 +307,7 @@
             position: relative;
             width: 100%;
             min-height: 210px;
+            height: 100%;
             top: 0;
             left: 0;
             z-index: 3;
@@ -390,6 +392,7 @@
         &-img {
 
             font-size: 0;
+            max-width: 590px;
 
             &-wrapper {
 
@@ -409,6 +412,7 @@
 
             font-size: 0;
             margin-bottom: 20px;
+            max-width: 590px;
 
             &-wrapper {
 
@@ -571,6 +575,7 @@
             &-area {
 
                 margin-top: 40px;
+                font-size: 0;
 
                 textarea {
 
@@ -640,6 +645,8 @@
     }
 
     .actual-questions-block-2 {
+
+        margin-bottom: 40px;
     
         &__search {
     
@@ -672,6 +679,76 @@
             button + button {
 
                 display: inline-block;
+            }
+        }
+    }
+
+    .actual-questions-block-3 {
+
+        flex-wrap: wrap;
+
+        &__photos {
+
+            width: 100%;
+            margin-right: 0;
+            display: flex;
+            height: auto;
+            margin-bottom: 40px;
+        }
+
+        &__photo {
+
+            min-width: 280px;
+            margin-bottom: 0;
+            margin-right: 5px;
+
+            &:last-child {
+
+                margin-right: 0;
+            }
+        }
+
+        &__content {
+
+            &-desc {
+
+                font-size: 20px;
+                line-height: 25px;
+            }
+
+            &-text {
+
+                margin-top: 20px;
+                margin-bottom: 10px;
+            }
+
+            &-chat {
+
+                &-item {
+
+                    max-width: 100%;
+                }
+            }
+
+            &-social {
+
+                &-head {
+
+                    flex-wrap: wrap;
+
+                    &-desc {
+
+                        width: 100%;
+                        margin-right: 0;
+                        text-align: center;
+                        margin-bottom: 10px;
+                    }
+
+                    &-icons {
+
+                        margin: 0 auto;
+                    }
+                }
             }
         }
     }
