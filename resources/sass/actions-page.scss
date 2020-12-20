@@ -357,6 +357,8 @@
 
     .actions-block-1 {
 
+        margin-bottom: 40px;
+
         &__title {
 
             margin-bottom: 20px;
@@ -395,6 +397,68 @@
         &__image-wrapper {
 
             display: none;
+        }
+    }
+
+    .actions-block-2 {
+
+        &__items {
+
+            margin: 0 -20px;
+        }
+
+        &__item {
+
+            max-width: none;
+            margin-bottom: 40px;
+
+            &-background {
+
+                border-radius: 0;
+            }
+
+            &-content-wrapper {
+
+                justify-content: center !important;
+            }
+
+            &-content {
+
+                left: auto !important;
+                right: auto !important;
+
+                &-layer1 {
+
+                    padding: 0;
+                }
+
+                &-layer2 {
+
+                    padding: 0;
+                }
+
+                &-layer3 {
+
+                    padding: 10px;
+                }
+
+                &-layer4 {
+
+                    height: 317px;
+                    padding-left: 10px;
+                    padding-right: 10px;
+
+                    &-title {
+
+                        font-size: 24px;
+                    }
+                }
+            }
+
+            &-image {
+
+                display: none;
+            }
         }
     }
 }
