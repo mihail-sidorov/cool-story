@@ -84,6 +84,36 @@
     }
 }
 
+.portfolio-block-2 {
+
+    margin-bottom: 80px;
+
+    &__items {
+
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    &__item {
+
+        margin-right: 20px;
+        margin-bottom: 20px;
+        font-size: 24px;
+        color: #9495A0;
+
+        &_active, &:hover {
+
+            color: #FFC14D;
+        }
+
+        &:last-child {
+
+            margin-right: 0;
+        }
+    }
+}
+
 @media screen and (max-width:1050px) {
 
     .portfolio-block-1 {
@@ -121,6 +151,21 @@
                 font-size: 24px;
                 margin-bottom: 5px;
             }
+        }
+    }
+
+    .portfolio-block-2 {
+
+        margin-bottom: 20px;
+
+        &__items {
+
+            justify-content: flex-start;
+        }
+
+        &__item {
+
+            font-size: 18px;
         }
     }
 }
