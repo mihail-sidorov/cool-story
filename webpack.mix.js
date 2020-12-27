@@ -15,6 +15,7 @@ mix.js('resources/js/app.js', 'js')
    .sass('resources/sass/app.scss', 'css')
    .copyDirectory('resources/libraries/js', 'js/libraries')
    .copyDirectory('resources/libraries/css', 'css/libraries')
+   .copyDirectory('resources/font', 'font')
    .options({
       processCssUrls: false,
    })
