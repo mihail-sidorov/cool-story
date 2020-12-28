@@ -539,6 +539,8 @@
             padding: 40px 20px 110px 20px;
             background-image: url('../imgs/videos-block-1-background-mobile.png');
             background-position: 100% calc(100% + 30px);
+            height: 100vh;
+            align-items: flex-start;
         }
 
         &__text {

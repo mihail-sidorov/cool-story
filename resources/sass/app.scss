@@ -135,6 +135,33 @@ body {
     font-weight: bold;
   }
 
+  .mCSB_scrollTools {
+
+    width: 5px;
+
+    .mCSB_draggerContainer {
+
+      background-color: #c8cbd0;
+      border-radius: 10px;
+
+      .mCSB_dragger {
+
+        .mCSB_dragger_bar {
+
+          width: 100%;
+          background-color: #0D0923;
+          border-radius: 10px;
+          cursor: default;
+        }
+
+        .mCSB_draggerRail {
+
+          display: none;
+        }
+      }
+    }
+  }
+
   @media screen and (max-width:780px) {
   
     .main-wrapper-title {
